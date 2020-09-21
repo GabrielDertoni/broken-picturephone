@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+    <script src="queue.js"></script>
+    <script src="buttons.js"></script>
+    <script src="box.js"></script>
+    <script src="draw.js"></script>
+    <script src="line_draw.js"></script>
+    <script src="ellipse_draw.js"></script>
+    <script src="rect_draw.js"></script>
+    <script src="bucket_draw.js"></script>
+    <script src="sketch.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <main>
+    </main>
+    <div class="tools-container">
+        <div class="tool">
+            <input type="radio" id="line-tool" name="tool" value="line-tool" checked>
+            <img src="assets/line-tool.svg" onclick="switch_tool('line-tool')"/>
+        </div>
+        <div class="tool">
+            <input type="radio" id="ellipse-tool" name="tool" value="ellipse-tool">
+            <img src="assets/ellipse-tool.svg" onclick="switch_tool('ellipse-tool')"/>
+        </div>
+        <div class="tool">
+            <input type="radio" id="rect-tool" name="tool" value="rect-tool">
+            <img src="assets/rect-tool.svg" onclick="switch_tool('rect-tool')"/>
+        </div>
+        <div class="tool">
+            <input type="radio" id="bucket-tool" name="tool" value="bucket-tool">
+            <img src="assets/bucket-tool.svg" onclick="switch_tool('bucket-tool')"/>
+        </div>
+        <div class="colorpicker-container">
+          <input type="color" id="fill-color" name="fill" value="#000000">
+          <label for="fill">Fill</label>
+        </div>
+        <div class="colorpicker-container">
+          <input type="color" id="stroke-color" name="stroke" value="#000000">
+          <label for="stroke">Stroke Color</label>
+        </div>
+    </div>
+  </body>
+</html>

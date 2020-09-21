@@ -1,0 +1,41 @@
+body {
+    background-color: lightgray;
+}
+
+label {
+    color: black;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tools-container {
+    display: flex;
+    flex-flow: row no-wrap;
+}
+
+.tools-container div {
+    margin-right: 1em;
+}
+
+.tool {
+    padding: 0.1em;
+    background-color: lightblue;
+}
+
+.tool.selected {
+}
+
+.tool [type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.tool [type=radio] + img {
+    cursor: pointer;
+}
+
+.tool [type=radio]:checked + img {
+    outline: 2px solid #f00;
+}
